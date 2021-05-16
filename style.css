@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 45px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #6600ff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-box {
+  background-color: black;
+  height: 10rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px #000;
+}
+input {
+  padding: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#calculate {
+  text-align: center;
+  width: 140px;
+  font-size: 20px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.result {
+  height: 20rem;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .input-box {
+    height: 10rem;
+    width: 18rem;
+    flex-wrap: wrap;
+  }
+  input {
+    margin-top: 10px;
+  }
+  .calculate {
+    margin-top: -10px;
+
+    padding: 0.5rem;
+  }
+  .result {
+    height: 15rem;
+    width: 18rem;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    top: 5px;
+    left: 20px;
+
+    position: fixed;
+  }
+}
+
+.years,
+.month,
+.day {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  box-shadow: 1px 1px 2px 3px #000;
+  color: white;
+}
+.years div,
+.month div,
+.day div {
+  text-align: center;
+  color: gray;
+}
